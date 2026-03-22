@@ -1,0 +1,44 @@
+name: "perrucho-content pipeline"
+version: "1.0.0"
+description: >
+  Pipeline de produção de conteúdo para Perrucho & Co.
+  Do tema bruto ao conteúdo publicado no Instagram e TikTok.
+
+steps:
+  - file: steps/step-01-input-tema.md
+    type: checkpoint
+
+  - file: steps/step-02-pesquisa-angulos.md
+    agent: roberto-referencia
+    execution: subagent
+
+  - file: steps/step-03-selecao-angulo.md
+    type: checkpoint
+
+  - file: steps/step-04a-criar-instagram.md
+    agent: iago-instagram
+    execution: subagent
+    format: instagram-feed
+
+  - file: steps/step-04b-criar-tiktok.md
+    agent: tiago-tiktok
+    execution: subagent
+    format: tiktok
+
+  - file: steps/step-05-aprovacao-conteudo.md
+    type: checkpoint
+
+  - file: steps/step-06-criar-visuais.md
+    agent: daniela-design
+    execution: inline
+
+  - file: steps/step-07-revisao.md
+    agent: vera-veredito
+    execution: inline
+
+  - file: steps/step-08-aprovacao-final.md
+    type: checkpoint
+
+  - file: steps/step-09-publicar.md
+    agent: bruno-blotato
+    execution: inline

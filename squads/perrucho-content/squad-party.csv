@@ -1,0 +1,7 @@
+id,name,title,icon,execution,path
+roberto-referencia,Roberto Referência,Pesquisador de Temas e Ângulos,📰,subagent,./agents/roberto-referencia.agent.md
+iago-instagram,Iago Instagram,Criador de Conteúdo Instagram,✍️,subagent,./agents/iago-instagram.agent.md
+tiago-tiktok,Tiago TikTok,Criador de Conteúdo TikTok,🎵,subagent,./agents/tiago-tiktok.agent.md
+daniela-design,Daniela Design,Designista de Visuais,🎨,inline,./agents/daniela-design.agent.md
+vera-veredito,Vera Veredito,Revisora de Conteúdo,✅,inline,./agents/vera-veredito.agent.md
+bruno-blotato,Bruno Blotato,Publicador Social,📤,inline,./agents/bruno-blotato.agent.md

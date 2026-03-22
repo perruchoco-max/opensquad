@@ -1,0 +1,68 @@
+name: "perrucho-content"
+description: >
+  Squad de produção de conteúdo para Perrucho & Co.
+  Pesquisa temas, gera ângulos de autoridade premium, escreve conteúdo para
+  Instagram (carrossel + Reels) e TikTok, cria visuais no Canva, revisa e publica.
+version: "1.0.0"
+created: "2026-03-22"
+performance_mode: econômico
+
+company: _opensquad/_memory/company.md
+memory: squads/perrucho-content/_memory/memories.md
+
+formats:
+  - instagram-feed
+  - instagram-reels
+  - tiktok
+
+skills:
+  - web_search
+  - web_fetch
+  - blotato
+  - canva
+  - image-generator
+
+data:
+  - pipeline/data/research-brief.md
+  - pipeline/data/domain-framework.md
+  - pipeline/data/quality-criteria.md
+  - pipeline/data/output-examples.md
+  - pipeline/data/anti-patterns.md
+  - pipeline/data/tone-of-voice.md
+
+investigation:
+  enriched: false
+  profiles_analyzed: 7
+  date: "2026-03-22"
+  dir: squads/perrucho-content/_investigations
+  profiles:
+    - sechamakobo
+    - thallycintra
+    - leticiavazlv
+    - byvickmachado
+    - midsdotrafego
+    - juliaanasantoss
+    - jeanoliveiraxx
+  note: "Investigation running — enrich agent files when pattern-analysis.md files are available"
+
+agents:
+  - id: roberto-referencia
+    name: "Roberto Referência"
+    file: agents/roberto-referencia.agent.md
+  - id: iago-instagram
+    name: "Iago Instagram"
+    file: agents/iago-instagram.agent.md
+  - id: tiago-tiktok
+    name: "Tiago TikTok"
+    file: agents/tiago-tiktok.agent.md
+  - id: daniela-design
+    name: "Daniela Design"
+    file: agents/daniela-design.agent.md
+  - id: vera-veredito
+    name: "Vera Veredito"
+    file: agents/vera-veredito.agent.md
+  - id: bruno-blotato
+    name: "Bruno Blotato"
+    file: agents/bruno-blotato.agent.md
+
+pipeline: pipeline/pipeline.yaml
