@@ -2,10 +2,12 @@
   "browser": {
     "browserName": "chromium",
     "isolated": false,
-    "userDataDir": "_opensquad/_browser_profile",
+    "userDataDir": "/home/user/opensquad/_opensquad/_browser_profile",
+    "chromiumSandbox": false,
     "launchOptions": {
       "headless": true,
-      "executablePath": "/root/.cache/ms-playwright/chromium-1194/chrome-linux/chrome"
+      "executablePath": "/root/.cache/ms-playwright/chromium-1194/chrome-linux/chrome",
+      "args": ["--no-sandbox", "--disable-setuid-sandbox"]
     }
   }
 }
