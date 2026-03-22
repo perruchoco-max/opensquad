@@ -5,7 +5,7 @@
     "userDataDir": "_opensquad/_browser_profile",
     "launchOptions": {
       "headless": true,
-      "channel": "chrome"
+      "executablePath": "/root/.cache/ms-playwright/chromium-1194/chrome-linux/chrome"
     }
   }
 }
