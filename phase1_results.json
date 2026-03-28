@@ -1,0 +1,78 @@
+{
+  "fase": "1_scraping_test",
+  "stats": {
+    "success": 0,
+    "failed": 12,
+    "total": 12
+  },
+  "results": {
+    "Bunker 5": [
+      {
+        "roteiro": "412",
+        "url": "https://seen-molecule-999.notion.site/ROTEIRO-412-Comparando-coisas-do-seu-nicho-com-coisas-comuns-27d5a2221e7c8073a00ee857a0f4b925",
+        "status": "failed"
+      },
+      {
+        "roteiro": "438",
+        "url": "https://seen-molecule-999.notion.site/ROTEIRO-438-Explicando-TEMA-COMPLEXO-usando-COISA-SIMPLES-27d5a2221e7c80c79f49c37f28dd7246",
+        "status": "failed"
+      },
+      {
+        "roteiro": "447",
+        "url": "https://seen-molecule-999.notion.site/ROTEIRO-447-Você-não-sabe-fazer-coisa-básica-e-eu-vou-te-provar-2e55a2221e7c800ebda2fdb37fe0e8a8",
+        "status": "failed"
+      }
+    ],
+    "Bunker 3": [
+      {
+        "roteiro": "270",
+        "url": "https://seen-molecule-999.notion.site/ROTEIRO-270-Trocando-coisa-cara-por-acessível-c3ec8ef950544e64bdc178624e475811",
+        "status": "failed"
+      },
+      {
+        "roteiro": "269",
+        "url": "https://seen-molecule-999.notion.site/ROTEIRO-269-Estrutura-Viral-Nikolas-de0659239a604606b4df41717aa15293",
+        "status": "failed"
+      },
+      {
+        "roteiro": "279",
+        "url": "https://seen-molecule-999.notion.site/ROTEIRO-279-A-volta-do-Neymar-a8bae08a43bf446dad9ce3aea49e874f",
+        "status": "failed"
+      }
+    ],
+    "Bunker 2": [
+      {
+        "roteiro": "236",
+        "url": "https://seen-molecule-999.notion.site/ROTEIRO-236-Qual-foi-o-mais-3374257ad95442aa9c1d8655c58aa00f",
+        "status": "failed"
+      },
+      {
+        "roteiro": "204",
+        "url": "https://seen-molecule-999.notion.site/ROTEIRO-204-Momentos-que-quase-me-fizeram-3a7922ddbdaf407ebd4415a2a83b179c",
+        "status": "failed"
+      },
+      {
+        "roteiro": "212",
+        "url": "https://seen-molecule-999.notion.site/ROTEIRO-212-Obrigações-para-não-se-dar-mal-1d27a35266d84239953c641741ec2f46",
+        "status": "failed"
+      }
+    ],
+    "Bunker 1": [
+      {
+        "roteiro": "154",
+        "url": "https://seen-molecule-999.notion.site/ROTEIRO-154-Cobrei-X-reais-pra-fazer-tal-coisa-a54707473b6143cab2b7890b83d9595d",
+        "status": "failed"
+      },
+      {
+        "roteiro": "39",
+        "url": "https://seen-molecule-999.notion.site/ROTEIRO-39-História-impactante-de-alguma-celebridade-82b9472da00342ecb6890f0f33d38f5a",
+        "status": "failed"
+      },
+      {
+        "roteiro": "199",
+        "url": "https://seen-molecule-999.notion.site/ROTEIRO-199-Em-X-anos-como-profissional-e-eu-nunca-e71ce6299e5142a1959280f243363b6b",
+        "status": "failed"
+      }
+    ]
+  }
+}

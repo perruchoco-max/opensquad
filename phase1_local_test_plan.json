@@ -1,0 +1,80 @@
+{
+  "fase": "1_local_test",
+  "timestamp": "2026-03-28T14:45:00",
+  "bunker_test": {
+    "fase": "1_local_test",
+    "timestamp": "2026-03-28T14:45:00",
+    "bunker": "Bunker 1",
+    "status": "pronto_para_teste_mcp",
+    "próximas_ações": [
+      "1. Chamar notion-fetch com collection://e19169a1-1eaa-82b4-9a51-07ba8bfc68ef",
+      "2. Listar páginas: page_size=5, ordenar por 'created' DESC",
+      "3. Para cada página: extrair mention-page URL do título",
+      "4. Chamar notion-fetch na URL extracted para validar acesso",
+      "5. Chamar notion-update-page para inserir conteúdo de teste",
+      "6. Registrar success/failure de cada operação"
+    ],
+    "conteúdo_simulado": {
+      "roteiro": "ROTEIRO-999-Teste",
+      "corpo": "Este é um conteúdo simulado para teste da migração.\n\nPadrão de estrutura que será usado para todos os 174 roteiros:\n1. Extrair de URL externa\n2. Processar com BeautifulSoup\n3. Inserir em página local via notion-update-page\n4. Registrar sucesso/falha\n\nEste teste valida que o fluxo completo funciona.",
+      "fonte": "Simulado - Teste de Infraestrutura"
+    },
+    "critérios_sucesso": [
+      "✓ notion-fetch retorna lista de páginas",
+      "✓ mention-page links são extraídos corretamente",
+      "✓ notion-update-page consegue atualizar uma página",
+      "✓ Conteúdo simulado é inserido com sucesso"
+    ]
+  },
+  "test_plan": {
+    "fase": "1_local_test",
+    "status": "pronto",
+    "descrição": "Valida infraestrutura local usando Notion MCP sem dependência de URLs externas",
+    "teste_1_listar_cards": {
+      "ferramenta": "notion-fetch com data_source_id",
+      "input": {
+        "data_source_id": "collection://e19169a1-1eaa-82b4-9a51-07ba8bfc68ef",
+        "page_size": 5
+      },
+      "esperado": "Lista de 5 páginas do Bunker 1",
+      "objetivo": "Confirmar que cards existem e são acessíveis"
+    },
+    "teste_2_extrair_urls": {
+      "ferramenta": "Regex/parsing do conteúdo notion",
+      "padrão_regex": "<mention-page url=\"(https://[^\"]+)\"",
+      "esperado": "URLs no formato https://www.notion.so/[hex32]",
+      "objetivo": "Confirmar que mention-page links estão nos títulos"
+    },
+    "teste_3_fetch_url": {
+      "ferramenta": "notion-fetch com URL extraída",
+      "esperado": "Conteúdo da página ou erro controlado",
+      "objetivo": "Validar acesso ao link mencionado"
+    },
+    "teste_4_update_page": {
+      "ferramenta": "notion-update-page",
+      "input": {
+        "page_id": "[extraído de teste_1]",
+        "command": "update_content",
+        "content": "Conteúdo simulado de roteiro para teste"
+      },
+      "esperado": "Página atualizada com sucesso",
+      "objetivo": "Validar que update-page funciona"
+    },
+    "teste_5_validar": {
+      "ferramenta": "notion-fetch na página atualizada",
+      "esperado": "Conteúdo simulado presente no resultado",
+      "objetivo": "Confirmar que conteúdo foi escrito corretamente"
+    },
+    "critérios_aprovação": {
+      "mínimo": "Testes 1, 4 e 5 funcionam (80%)",
+      "completo": "Todos os 5 testes passam (100%)",
+      "próximo_passo": "Se aprovado → Fase 2 com URLs reais (quando acessíveis)"
+    }
+  },
+  "status": "pronto_para_execução",
+  "bloqueio_externo": {
+    "status": "BLOQUEADO",
+    "motivo": "URLs seen-molecule-999.notion.site retornam HTTPSConnectionPool errors",
+    "solução_alternativa": "Usar Notion MCP para validar local, depois integrar scraping"
+  }
+}
