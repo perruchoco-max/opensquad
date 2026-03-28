@@ -1,0 +1,52 @@
+{
+  "timestamp": "2026-03-28T15:14:09.850308",
+  "tarefa": "Extrair 174 URLs mention-page de roteiros",
+  "bunkers": {
+    "Bunker 1": {
+      "collection_id": "e19169a1-1eaa-82b4-9a51-07ba8bfc68ef",
+      "database_id": "057169a11eaa8317a11481f6e41d59bc",
+      "expected": 44,
+      "roteiros": "15-200"
+    },
+    "Bunker 2": {
+      "collection_id": "d30169a1-1eaa-83b2-8b38-07a371dc3aae",
+      "database_id": "3a5169a11eaa83339475010f06c27836",
+      "expected": 29,
+      "roteiros": "201-251"
+    },
+    "Bunker 3": {
+      "collection_id": "fbd169a1-1eaa-8374-a3e4-878a6c3535f2",
+      "database_id": "63a169a11eaa827f8901819c562db674",
+      "expected": 51,
+      "roteiros": "252-302"
+    },
+    "Bunker 5": {
+      "collection_id": "716169a1-1eaa-8346-bff4-87e4cc1c1ad0",
+      "database_id": "5e2169a11eaa82038bac0171e2479cc4",
+      "expected": 50,
+      "roteiros": "401-450"
+    }
+  },
+  "processo": [
+    "1. Para cada bunker: notion-search(data_source_url=collection://..., query='ROTEIRO', page_size=25)",
+    "2. Coletar todos os page_ids de cada bunker",
+    "3. Para cada page_id: notion-fetch(id=[page_id])",
+    "4. Extrair URL do campo 'Nome': <mention-page url=\"https://www.notion.so/[UUID]\"/>",
+    "5. Compilar em JSON com estrutura: {Bunker: {total, urls: [{roteiro, url}]}}"
+  ],
+  "regex_pattern": "\"Nome\":\"<mention-page url=\\\\\"(https://www\\.notion\\.so/[a-f0-9]+)\\\\\"",
+  "expected_output": {
+    "timestamp": "ISO-8601",
+    "bunkers": {
+      "Bunker 1": {
+        "total": 44,
+        "urls": [
+          {
+            "roteiro": "ROTEIRO-15",
+            "url": "https://www.notion.so/..."
+          }
+        ]
+      }
+    }
+  }
+}
