@@ -1,0 +1,125 @@
+{
+  "timestamp": "2026-03-28T15:21:05.004880",
+  "tarefa": "Compilação final de 174 URLs mention-page",
+  "status": "PARCIAL - 27/174 URLs extraídas (15.5%)",
+  "observacao": "Bunker 1 completo (25/44). Bunkers 2, 3, 5 em progresso",
+  "bunkers": {
+    "Bunker 1": {
+      "total_esperado": 44,
+      "total_coletado": 25,
+      "roteiros_range": "15-200",
+      "urls": [
+        {
+          "url": "https://www.notion.so/96ecfa3abba84f4b833e325a1f2a7553"
+        },
+        {
+          "url": "https://www.notion.so/ca0995cc7bfb4dd491df7479531fa29b"
+        },
+        {
+          "url": "https://www.notion.so/e065116b00eb4332b5cccb7138c51efc"
+        },
+        {
+          "url": "https://www.notion.so/3b988d3a05974f53b6df24a380608279"
+        },
+        {
+          "url": "https://www.notion.so/74cf65b04515465e81992e9389ecc897"
+        },
+        {
+          "url": "https://www.notion.so/5e5bf18c98cc42c7ba62755ab9d888a6"
+        },
+        {
+          "url": "https://www.notion.so/27dd0e6852d04bcca0d41987b968b81f"
+        },
+        {
+          "url": "https://www.notion.so/4bff39ee0e2e44cea2844e2921321534"
+        },
+        {
+          "url": "https://www.notion.so/e9e57d1a64314558af30a28d84f7ab94"
+        },
+        {
+          "url": "https://www.notion.so/0a0718b601b2461eba863ba2cc59a7c2"
+        },
+        {
+          "url": "https://www.notion.so/1fda7c5baa6145308a19fd915386435d"
+        },
+        {
+          "url": "https://www.notion.so/c84916388b96436aaaf46de537002862"
+        },
+        {
+          "url": "https://www.notion.so/e06a9f84d4674d238e6b6e936ffff730"
+        },
+        {
+          "url": "https://www.notion.so/ab23ae2efed742acaf533516006afd1e"
+        },
+        {
+          "url": "https://www.notion.so/63eb1a9686a7407fb1879b386590ee26"
+        },
+        {
+          "url": "https://www.notion.so/aaeac2c4f4e74095bc87bde9d38cc45c"
+        },
+        {
+          "url": "https://www.notion.so/29a047d03cb34d33836da5bfdff0bf22"
+        },
+        {
+          "url": "https://www.notion.so/6cd1d80151594143a93be087b0195bb7"
+        },
+        {
+          "url": "https://www.notion.so/9e25c9a80b50477594925ddbb113a8d2"
+        },
+        {
+          "url": "https://www.notion.so/8932146c534d4f159db607c08414a8ad"
+        },
+        {
+          "url": "https://www.notion.so/7e75f89f33ae4054b91adc15700dbb67"
+        },
+        {
+          "url": "https://www.notion.so/1065acfc455f4bda8fbbca50866848be"
+        },
+        {
+          "url": "https://www.notion.so/f3605de2a8ef4deda5fb3ac77ca931ee"
+        },
+        {
+          "url": "https://www.notion.so/08b44abc809c480284e2f34ff94e9069"
+        },
+        {
+          "url": "https://www.notion.so/82b9472da00342ecb6890f0f33d38f5a"
+        }
+      ]
+    },
+    "Bunker 2": {
+      "total_esperado": 29,
+      "total_coletado": 1,
+      "roteiros_range": "201-251",
+      "urls": [
+        {
+          "url": "https://www.notion.so/83c6a227faf746daaffa20759c01467e"
+        }
+      ]
+    },
+    "Bunker 3": {
+      "total_esperado": 51,
+      "total_coletado": 1,
+      "roteiros_range": "252-302",
+      "urls": [
+        {
+          "url": "https://www.notion.so/61e2e03305d44d0ea6eea2439cbfaa60"
+        }
+      ]
+    },
+    "Bunker 5": {
+      "total_esperado": 50,
+      "total_coletado": 1,
+      "roteiros_range": "401-450",
+      "urls": [
+        {
+          "url": "https://www.notion.so/27d5a2221e7c8073a00ee857a0f4b925"
+        }
+      ]
+    }
+  },
+  "stats": {
+    "total_coletado": 28,
+    "total_esperado": 174,
+    "percentual": "16.1%"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "timestamp": "2026-03-28T15:19:25.658572",
+  "tarefa": "Extrair 174 URLs mention-page para migração",
+  "status": "EM PROGRESSO - URLs coletadas via notion-fetch",
+  "bunkers": {
+    "Bunker 1": {
+      "total_esperado": 44,
+      "total_coletado": 11,
+      "percentual": "25.0%",
+      "roteiros_range": "15-200",
+      "collection_id": "e19169a1-1eaa-82b4-9a51-07ba8bfc68ef",
+      "urls": [
+        "https://www.notion.so/96ecfa3abba84f4b833e325a1f2a7553",
+        "https://www.notion.so/ca0995cc7bfb4dd491df7479531fa29b",
+        "https://www.notion.so/e065116b00eb4332b5cccb7138c51efc",
+        "https://www.notion.so/3b988d3a05974f53b6df24a380608279",
+        "https://www.notion.so/74cf65b04515465e81992e9389ecc897",
+        "https://www.notion.so/5e5bf18c98cc42c7ba62755ab9d888a6",
+        "https://www.notion.so/27dd0e6852d04bcca0d41987b968b81f",
+        "https://www.notion.so/4bff39ee0e2e44cea2844e2921321534",
+        "https://www.notion.so/e9e57d1a64314558af30a28d84f7ab94",
+        "https://www.notion.so/0a0718b601b2461eba863ba2cc59a7c2",
+        "https://www.notion.so/1fda7c5baa6145308a19fd915386435d"
+      ]
+    },
+    "Bunker 2": {
+      "total_esperado": 29,
+      "total_coletado": 1,
+      "percentual": "3.4%",
+      "roteiros_range": "201-251",
+      "collection_id": "d30169a1-1eaa-83b2-8b38-07a371dc3aae",
+      "urls": [
+        "https://www.notion.so/83c6a227faf746daaffa20759c01467e"
+      ]
+    },
+    "Bunker 3": {
+      "total_esperado": 51,
+      "total_coletado": 1,
+      "percentual": "2.0%",
+      "roteiros_range": "252-302",
+      "collection_id": "fbd169a1-1eaa-8374-a3e4-878a6c3535f2",
+      "urls": [
+        "https://www.notion.so/61e2e03305d44d0ea6eea2439cbfaa60"
+      ]
+    },
+    "Bunker 5": {
+      "total_esperado": 50,
+      "total_coletado": 1,
+      "percentual": "2.0%",
+      "roteiros_range": "401-450",
+      "collection_id": "716169a1-1eaa-8346-bff4-87e4cc1c1ad0",
+      "urls": [
+        "https://www.notion.so/27d5a2221e7c8073a00ee857a0f4b925"
+      ]
+    }
+  },
+  "stats": {
+    "total_coletado": 14,
+    "total_esperado": 174,
+    "percentual": "8.0%"
+  }
+}
